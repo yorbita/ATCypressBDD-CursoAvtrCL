@@ -1,0 +1,53 @@
+{
+  "name": "avtr",
+  "version": "1.0.0",
+  "description": "A automation cypress-bdd framework developed by Avattar Consulting.",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:test": "cypress run --browser chrome --headless",
+    "cy:test:firefox": "cypress run --browser firefox --headless",
+    "cy:test:edge": "cypress run --browser edge --headless",
+    "cy:html": "node cucumberReports.js"
+  },
+  "keywords": [
+    "automation",
+    "cucumber",
+    "cypress",
+    "typescript"
+  ],
+  "author": "Avattar Consulting SpA",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/avtr-templates/cypress/template-cypress-bdd-testing-framework-avtrcl"
+  },
+  "homepage": "https://gitlab.com/avtr-templates/cypress/template-cypress-bdd-testing-framework-avtrcl/-/blob/develop/README.md",
+  "devDependencies": {
+    "cypress": "^9.6.1",
+    "cypress-cucumber-preprocessor": "4.1.0",
+    "cypress-multi-reporters": "^1.6.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "mocha": "^9.1.3",
+    "mocha-junit-reporter": "^2.0.2",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "typescript": "^4.5.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "eslintConfig": {
+    "env": {
+      "cypress/globals": true
+    },
+    "plugins": [
+      "cypress"
+    ]
+  }
+}

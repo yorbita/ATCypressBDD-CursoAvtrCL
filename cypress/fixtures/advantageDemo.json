@@ -1,0 +1,23 @@
+{
+
+"urlregis": "https://www.advantageonlineshopping.com/#/register",
+"username": "pepitoyunou",
+"email": "reyrsddgbfd@gmail.com",
+"password": "Pass.w0rd",
+"firstName": "Pedro", 
+"lastName": "Mendez",
+"phoneNumber": "563392520",
+"city": "Santiago",
+"address": "Orrego Luco 87",
+"state": "Provi",
+"postalCode": "7890000",
+
+"url" : "https://www.advantageonlineshopping.com/#",
+"contactEmail" : "pt4esting@gmail.com",
+"contactSubject": "Hola, quisiera recibir información sobre las promos",
+"category": ["Speakers", "Laptops", "Headphones", "Tablets", "Mice"],
+
+"compraCategoryLocators": ["#speakersImg", "#tabletsImg", "#laptopsImg", "#miceImg", "#headphonesImg"]
+
+
+}

@@ -1,0 +1,34 @@
+{
+    "chromeWebSecurity": false,
+
+
+    "ignoreTestFiles": ["*.ts", "*.md"],    
+    "testFiles": "**/*.{feature, features}",
+
+
+    "viewportWidth": 1280,
+    "viewportHeight": 768,
+
+
+    "baseUrl": null,
+    "port": null,
+    "watchForFileChanges": true,
+
+
+    "defaultCommandTimeout": 180000,
+    "pageLoadTimeout": 180000,
+
+
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mocha-junit-reporter",
+      "mochaJunitReporterReporterOptions": {
+        "mochaFile": "cypress/reports/results.xml"
+      }
+    },
+
+    "screenshotsFolder": "cypress/reports/screenshots",
+    "videosFolder": "cypress/reports/videos",
+    
+    "trashAssetsBeforeRuns": true
+}
